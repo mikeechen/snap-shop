@@ -31,6 +31,36 @@ Merv has no idea about design, but he decided to provide a wireframe of somethin
 
 **NOTE** It might help to make the website in a separately fro this repo as we are not making the website Angular friendly yet.
 
+## Resources
+
+Merv has offered some of his camera information for you to use.
+
+```javascript
+[
+  {
+    title: 'Nikon D3100 DSLR',
+    image: 'http://ecx.images-amazon.com/images/I/713u2gDQqML._SX522_.jpg',
+    rating: 4,
+    price: 369.99,
+    onSale: true
+  },
+  {
+    title: 'Canon EOS 70D',
+    image: 'http://ecx.images-amazon.com/images/I/81U00AkAUWL._SX522_.jpg',
+    rating: 2,
+    price: 1099.0,
+    onSale: false
+  },
+  {
+    title: 'Nikon D810A',
+    image:'http://ecx.images-amazon.com/images/I/91wtXIfLl2L._SX522_.jpg',
+    rating: 3,
+    price: 3796.95,
+    onSale: true
+  }
+]
+```
+
 ## Bonus
 
 Exceed Merv's expectations. Think of some other pages that might be interesting use for his website.
