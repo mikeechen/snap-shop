@@ -20,7 +20,7 @@ Merv Adello is the owner of a camera shop in Seattle. He wishes to build a websi
 
 Merv has no idea about design, but he decided to provide a wireframe of something he was thinking for the catalog. He says to feel free to use it or not.
 
-![SnapShop Wireframe](images/SnapShotCatalog.png)
+![SnapShop Wireframe](images/SnapShopCatalog.png)
 
 ## Assignment
 
