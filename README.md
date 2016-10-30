@@ -24,6 +24,10 @@ bash -c 'echo "JWT_SECRET="$(openssl rand -hex 64)' > .env
 
 To start the server, run `npm start`
 
+## Assignment Parts
+
+1. [HTML/CSS](1_scaffold_html.md)
+
 ## Usage
 
 The application's code lives in the `app` directory.
