@@ -27,6 +27,7 @@ To start the server, run `npm start`
 ## Assignment Parts
 
 1. [HTML/CSS](1_scaffold_html.md)
+1. [Angular Directives and Filters](2_Angular.md)
 
 ## Usage
 
