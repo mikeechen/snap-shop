@@ -98,7 +98,7 @@ router.post('/orders', authorize, (req, res, next) => {
     .then((rows) => {
       order = camelizeKeys(rows[0]);
 
-      knex('order_items')
+      return knex('order_items')
         .insert(decamelizeKeys(items.map((item) => {
           return {
             orderId: order.id,
