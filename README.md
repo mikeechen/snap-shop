@@ -28,7 +28,7 @@ To start the server, run `npm start`
 
 1. [HTML/CSS](1_scaffold_html.md)
 1. [Angular Directives and Filters](2_Angular.md)
-1. Angular Controllers
+1. [Angular Controllers](3_Controllers.md)
 1. Angular Services
 1. Angular Routing
 1. Angular Custom Directives
