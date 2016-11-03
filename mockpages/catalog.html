@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Catalog</title>
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo right">SnapShop</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">User</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+      <div class="row">
+        <div class="container">
+          <div class="col s8">
+            <form id="search-form">
+              <div class="row">
+                <div class="input-field col s7">
+                  <input placeholder="Search" id="search" type="text" class="validate">
+                </div>
+                <div class="col s5">
+                  <label>Sort By</label>
+                  <select class="browser-default">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+
+              <div class="card col s6">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="http://ecx.images-amazon.com/images/I/713u2gDQqML._SX522_.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Camera Name<i class="material-icons right">more_vert</i></span>
+                  <p>Price: $price</p>
+                  <p>Rating:</p>
+                  <p><a href="#">Add to Cart</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>More info</p>
+                </div>
+              </div>
+
+              <div class="card col s6">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="http://ecx.images-amazon.com/images/I/81U00AkAUWL._SX522_.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Camera Name<i class="material-icons right">more_vert</i></span>
+                  <p>Price: $price</p>
+                  <p>Rating:</p>
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>More info</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col s4">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title">Cart</span>
+
+                  <div class="row">
+                    <div class="col s12">
+                      <div class="row cart-products">
+                        <div class="product-name col s6">Camera Name 1</div>
+                        <div class="price col s6">$price</div>
+                      </div>
+                      <div class="row cart-products">
+                        <div class="product-name col s6">Camera Name 2</div>
+                        <div class="price col s6">$price</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col s12">
+                      <div class="subtotal col s6">Subtotal</div>
+                      <div class="subtotal col s6">$price</div>
+                      <div class="tax col s6">Tax</div>
+                      <div class="tax col s6">$price</div>
+                      <div class="total col s6">Total</div>
+                      <div class="total col s6">$price</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-action">
+                  <button id="dembtn" class="btn">Checkout</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">SnapShop</h5>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Homoe</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Login</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Sign Up</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2016 SnapShop
+          </div>
+        </div>
+      </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+  </body>
+
+</html>

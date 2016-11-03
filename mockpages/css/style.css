@@ -10,9 +10,6 @@ section {
   margin-bottom: 2%;
 }
 
-span {
-}
-
 .card img {
   max-height: 200px;
   max-width: 100%;
@@ -34,11 +31,6 @@ span {
 
 .total {
   font-size: 150%;
-}
-
-.on-sale {
-  font-size: 130%;
-  color: red;
 }
 
 #dembtn {
