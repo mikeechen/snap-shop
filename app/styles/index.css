@@ -6,11 +6,19 @@ body {
 
 section {
   flex: 1 0 auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 1%;
 }
 
-span {
+footer {
+  margin-top: 0;
+}
+
+h4 {
+  font-size: 250%;
+}
+
+.card {
+  height: 370px;
 }
 
 .card img {
@@ -41,6 +49,30 @@ span {
   color: red;
 }
 
+.desc {
+  text-align: left;
+}
+
 #dembtn {
   width: 100%;
+}
+
+#home-nav {
+  background-image: url('http://www.tcpinsurance.com/wp-content/uploads/2011/07/new_about_banner_image.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 50vh;
+  background-color: transparent;
+  text-decoration: white;
+  border: none;
+}
+
+#welcome-text {
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
+}
+
+#home-divs {
+  text-align: center;
 }

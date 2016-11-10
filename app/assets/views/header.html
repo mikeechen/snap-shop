@@ -1,0 +1,29 @@
+<div ng-controller="ViewControl as viewCtrl">
+  <div ng-show="viewCtrl.view()" class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper grey lighten-3">
+        <a href="#" class="brand-logo left indigo-text text-lighten-2">SnapShop</a>
+        <ul id="nav-mobile" class="right">
+          <li><a class="indigo-text text-lighten-2" ui-sref="home">Home</a></li>
+          <li><a class="indigo-text text-lighten-2" ui-sref="catalog">Catalog</a></li>
+          <li><a class="indigo-text text-lighten-2" ui-sref="signUp">Sign Up</a></li>
+          <li><a class="indigo-text text-lighten-2" href="#">Log In</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div ng-hide="viewCtrl.view()">
+    <nav id="home-nav">
+      <div class="nav-wrapper">
+        <a ui-sref="home" class="brand-logo left indigo-text text-lighten-2">SnapShop</a>
+        <ul id="nav-mobile" class="right">
+          <li><a ui-sref="home">Home</a></li>
+          <li><a ui-sref="catalog">Catalog</a></li>
+          <li><a ui-sref="signUp">Sign Up</a></li>
+          <li><a href="#">Log In</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
