@@ -1,6 +1,7 @@
 class ViewControl {
-  constructor(location) {
+  constructor(location, signUpSvc) {
     this.location = location;
+    this.signUpSvc = signUpSvc;
   }
 
   view() {
@@ -11,7 +12,11 @@ class ViewControl {
       return true;
     }
   }
+
+  logOut() {
+    this.signUpSvc.logOut();
+  }
 }
 
-ViewControl.$inject = ['$location'];
+ViewControl.$inject = ['$location', 'signUpService'];
 export default ViewControl;

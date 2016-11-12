@@ -53,6 +53,16 @@ h4 {
   text-align: left;
 }
 
+.order-headers {
+  background-color: white;
+  color: indigo;
+  width: 100%;
+}
+
+.order-headers:hover {
+  background-color: grey;
+}
+
 #dembtn {
   width: 100%;
 }

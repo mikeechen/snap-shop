@@ -1,0 +1,16 @@
+<center><h2>Log In</h2></center>
+<div class="container">
+  <div class="row">
+    <form ng-submit="signUpCtrl.logIn(signUpCtrl.email, signUpCtrl.pwd)">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate" ng-model="signUpCtrl.email">
+          <label for="email">Email</label>
+        </div>
+      <div class="input-field col s12">
+        <input id="password" type="password" class="validate" ng-model="signUpCtrl.pwd">
+        <label for="password">Password</label>
+      </div>
+      <input type="submit" value="Submit" class="btn waves-effect waves-light right"/>
+    </form>
+  </div>
+</div>

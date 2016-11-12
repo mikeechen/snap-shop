@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" ng-controller="ViewControl as viewCtrl">
   <div class="row">
     <div class="col l6 s12">
       <h5 class="indigo-text text-lighten-2">SnapShop</h5>
@@ -6,9 +6,11 @@
     <div class="col l4 offset-l2 s12">
       <ul>
         <li><a class="indigo-text text-lighten-2" ui-sref="home">Home</a></li>
-        <li><a class="indigo-text text-lighten-2" ui-sref="catalog">Catalog</a></li>
-        <li><a class="indigo-text text-lighten-2" ui-sref="signUp">Sign Up</a></li>
-        <li><a class="indigo-text text-lighten-2" href="#">Login</a></li>
+        <li><a class="indigo-text text-lighten-2" ui-sref="catalog" ng-show="viewCtrl.signUpSvc.signIn">Catalog</a></li>
+        <li><a class="indigo-text text-lighten-2" ui-sref="signUp" ng-hide="viewCtrl.signUpSvc.signIn">Sign Up</a></li>
+        <li><a class="indigo-text text-lighten-2" ui-sref="logIn" ng-hide="viewCtrl.signUpSvc.signIn">Log In</a></li>
+        <li><a class="indigo-text text-lighten-2" ng-show="viewCtrl.signUpSvc.signIn" ng-click="viewCtrl.logOut()">Log Out</a></li>
+        <li><a href="https://mikeechen-jquerycalc.surge.sh/" class="indigo-text text-lighten-2">Need a Calculator?</a></li>
       </ul>
     </div>
   </div>

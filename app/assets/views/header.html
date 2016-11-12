@@ -2,12 +2,14 @@
   <div ng-show="viewCtrl.view()" class="navbar-fixed">
     <nav>
       <div class="nav-wrapper grey lighten-3">
-        <a href="#" class="brand-logo left indigo-text text-lighten-2">SnapShop</a>
+        <a ui-sref="home" class="brand-logo left indigo-text text-lighten-2">SnapShop</a>
         <ul id="nav-mobile" class="right">
           <li><a class="indigo-text text-lighten-2" ui-sref="home">Home</a></li>
-          <li><a class="indigo-text text-lighten-2" ui-sref="catalog">Catalog</a></li>
-          <li><a class="indigo-text text-lighten-2" ui-sref="signUp">Sign Up</a></li>
-          <li><a class="indigo-text text-lighten-2" href="#">Log In</a></li>
+          <li><a class="indigo-text text-lighten-2" ui-sref="catalog" ng-show="viewCtrl.signUpSvc.signIn">Catalog</a></li>
+          <li><a class="indigo-text text-lighten-2" ui-sref="signUp" ng-hide="viewCtrl.signUpSvc.signIn">Sign Up</a></li>
+          <li><a class="indigo-text text-lighten-2" ui-sref="logIn" ng-hide="viewCtrl.signUpSvc.signIn">Log In</a></li>
+          <li><a class="indigo-text text-lighten-2" ui-sref="orders" ng-show="viewCtrl.signUpSvc.signIn">Orders</a></li>
+          <li><a class="indigo-text text-lighten-2" ng-show="viewCtrl.signUpSvc.signIn" ng-click="viewCtrl.logOut()">Log Out</a></li>
         </ul>
       </div>
     </nav>
@@ -19,9 +21,11 @@
         <a ui-sref="home" class="brand-logo left indigo-text text-lighten-2">SnapShop</a>
         <ul id="nav-mobile" class="right">
           <li><a ui-sref="home">Home</a></li>
-          <li><a ui-sref="catalog">Catalog</a></li>
-          <li><a ui-sref="signUp">Sign Up</a></li>
-          <li><a href="#">Log In</a></li>
+          <li><a ui-sref="catalog" ng-show="viewCtrl.signUpSvc.signIn">Catalog</a></li>
+          <li><a ui-sref="signUp" ng-hide="viewCtrl.signUpSvc.signIn">Sign Up</a></li>
+          <li><a ui-sref="logIn" ng-hide="viewCtrl.signUpSvc.signIn">Log In</a></li>
+          <li><a ng-show="viewCtrl.signUpSvc.signIn" ui-sref="orders">Orders</a></li>
+          <li><a ng-show="viewCtrl.signUpSvc.signIn" ng-click="viewCtrl.logOut()">Log Out</a></li>
         </ul>
       </div>
     </nav>
