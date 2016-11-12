@@ -35,6 +35,7 @@ class CartService {
           this.subtotal = 0;
           this.tax = 0;
           this.total = 0;
+          this.$state.go('orders');
         }
       })
       .catch((err) => Materialize.toast(err, 3000));

@@ -7,7 +7,12 @@
   <div id="order" class="modal">
       <div class="modal-content">
           <h4>Order Details</h4>
-          <p ng-repeat="item in ordersCtrl.items">{{ item.name }} QTY: {{ item.quantity }}</p>
+          <div class="row" ng-repeat="item in ordersCtrl.items">
+            <div class="col s4">
+              <img class="item-img" src="{{ item.image }}" alt="camera-image"/>
+            </div>
+            <div class="col s4">{{ item.name }} QTY: {{ item.quantity }}</div>
+          </div>
       </div>
   </div>
 </div>

@@ -63,6 +63,11 @@ h4 {
   background-color: grey;
 }
 
+.item-img {
+  max-height: 200px;
+  max-width: 100%;
+}
+
 #dembtn {
   width: 100%;
 }
